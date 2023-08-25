@@ -82,7 +82,7 @@ fetchDataFromServer(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${api
                 <h1 class="heading">${title}</h1>
                 <div class="meta-list">
                     <div class="meta-item">
-                        <img src="image/star.png" width="20" height="20" alt="rating">
+                        <img src="star.png" width="20" height="20" alt="rating">
                         <span class="span">${vote_average.toFixed(1)}</span>
                     </div>
                     <div class="separator"></div>
