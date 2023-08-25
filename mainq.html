@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="image/CinQ-Logo.png" type="image/x-icon">
+    
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+        <!-- CSS LINK -->
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- JS LINK -->
+        <script src="global.js" defer></script>
+        <!--<script src="movie-list.js" type="module"></script>-->
+    </head>
+    
+
+<body>
+     <!-- HEADER -->
+     <header class="header">
+
+        <!-- CinQ Logo Section -->
+        <a href="index.html" class="logo">
+            <img src="image/CinQ-Logo.png" alt="CinQ" width="140" height="32">
+        </a>
+        <div class="secnav">
+        <!-- Search Section -->
+        <div class="search-box" search-box>
+            <div class="search-wrapper" search-wrapper>
+                <input type="text" name="search" aria-label="search movies" placeholder="Yenna Raskala..... FindIt!"
+                    class="search-field" autocomplete="off" search-field>
+
+                <img src="image/search.png" alt="search" class="leading-icon" width="24" height="24">
+            </div>
+            <button class="search-btn" search-toggler>
+                <img src="image/close.png" alt="close search box" width="24" height="24">
+            </button>
+        </div>
+
+        <button class="search-btn" search-toggler menu-close>
+            <img src="image/search.png" width="24" height="24" alt="open search box">
+            </button>
+            
+            <button class="menu-btn " menu-btn menu-toggler>
+                <img src="image/menu.png" width="24" height="24" alt="open menu" class="menu">
+                <img src="image/menu-close.png" width="24" height="24" class="close" alt="close">
+            </button>
+        
+            
+        </div>
+    </header>
+    <div class="page">
+        <div class="sidebar" id="sidform">
+        <form class="sidebar-inner">
+        <div class="sidebar-list">
+        <input type="number" name="startYear" id="startYear" required>
+        <label for="startYear">Start Year</label>
+        </div>
+        <div class="sidebar-list">
+        <input type="number" name="endYear" id="endYear" required>
+        <label for="endYear">End Year</label>
+        </div>
+        <div class="sidebar-list">
+        <input type="number" name="minrate" id="minrate" min="0" max="10">
+        <label for="minrate">Minimum Rate</label>
+        </div>
+        <div class="sidebar-list">
+        <input type="number" name="maxrate" id="maxrate" min="0" max="10">
+        <label for="maxrate">Maximum Rate</label>
+        </div>
+        <div class="sidebar-list">
+        <select name = "dropdown" class="dropdown" id="gen">
+            <option value = "action" selected>Action</option>
+            <option value = "horror">Horror</option>
+            <option value = "crime">Crime</option>
+            <option value = "drama">Drama</option>
+            <option value = "comedy">Comedy</option>
+            <option value = "romance">Romance</option>
+            <option value = "fantasy">Fantasy</option>
+            <option value = "adventure">Adventure</option>
+            <option value = "thriller">Thriller</option>
+            <option value = "mystery">Mystery</option>
+        </select>
+        <label for="gen">Genre</label>
+        </div>
+        <div class="sidebar-list">
+        <select name="dropdown" class="dropdown" id="lang">
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+        </select>
+        <label for="lang">Language</label>
+        </div>
+        <div class="sidebar-list">
+        <select name="dropdown" class="dropdown" id="type">
+            <option value="movie">Movie</option>
+            <option value="show">Show</option>
+        </select>
+        <label for="type">Type</label>
+        </div>
+        <div class="sidebar-list">
+        <select name="dropdown" class="dropdown" id="sort">
+            <option value="highestrated">Highest Rated</option>
+            <option value="lowestrated">Lowest Rated</option>
+            <option value="latest" selected>Latest</option>
+            <option value="oldest">Oldest</option>
+        </select>
+        <label for="sort">Sort</label>
+        </div>
+        <div class="sidebar-list">
+        <button type="submit">Submit</button>
+        </div>
+        </form>
+        </div>
+    <script src="mainq.js"></script>
+    <style>
+        .sidebar input{
+            padding-left: 12px;
+            box-sizing: border-box;
+            border: 1px solid rgb(151, 239, 255);
+            border-radius: 4px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            color: none;
+            padding: 6px 12px;
+            box-sizing: border-box;
+            border: 1px solid rgb(151, 239, 255);
+            border-radius: 4px;
+            color: white;
+            background-color: #131212;
+            
+        }
+        button{
+            text-align: center;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid rgb(151, 239, 255);
+            border-radius: 4px;
+        }
+    </style>
+    <div class="movies container"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>CinQ-Backup</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/CinQ-Logo.png" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS LINK -->
+    <script src="global.js" defer></script>
+    <script src="index.js" type="module"></script>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- CinQ Logo Section -->
+        <a href="index.html" class="logo">
+            <img src="image/CinQ-Logo.png" alt="CinQ" width="140" height="32">
+        </a>
+        <div class="secnav">
+            <!-- Search Section -->
+            
+                <div class="search-wrapper" search-wrapper>
+                    <input type="text" name="search" aria-label="search movies" placeholder="Yenna Raskala..... FindIt!"
+                        class="search-field" autocomplete="off" search-field>
+    
+                    <img src="image/search.png" alt="search" class="leading-icon" width="24" height="24">
+                </div>
+                <button class="search-btn" search-toggler>
+                    <img src="image/close.png" alt="close search box" width="24" height="24">
+                </button>
+            
+    
+                <button class="search-btn" search-toggler menu-close>
+                <img src="image/search.png" width="24" height="24" alt="open search box">
+                
+                <button class="form-toggler" >
+                    <a href="mainq.html"> <img src="image/form-toggler.png" width="25" height="25" alt="open form"></a>
+                </button>
+                <button class="menu-btn " menu-btn menu-toggler>
+                    <img src="image/menu.png" width="24" height="24" alt="open menu" class="menu">
+                    <img src="image/menu-close.png" width="24" height="24" class="close" alt="close">
+                </button>
+            </div>
+      
+    </header>
+
+    <main>
+        <!-- SIDEBAR -->
+        <nav class="sidebar" sidebar></nav>
+
+        <div class="overlay" overlay menu-toggler></div>
+
+        <article class="container" page-content></article>
+    </main>
+</body>
+
+</html>
